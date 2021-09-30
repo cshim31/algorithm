@@ -6,7 +6,7 @@ int main() {
     
     bubbleSort(arr, size);
     printResult(arr, size);
-    return 1;
+    return 0;
 }
 
 void bubbleSort(int* arr, int size) {
