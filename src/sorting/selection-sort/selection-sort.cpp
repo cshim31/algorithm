@@ -6,7 +6,7 @@ int main() {
     
     selectionSort(arr, size);
     printResult(arr, size);
-    return 1;
+    return 0;
 }
 
 void selectionSort(int* arr, int size) {
