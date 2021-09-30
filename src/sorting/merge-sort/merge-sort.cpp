@@ -9,7 +9,7 @@ int main() {
     
     mergeSort(arr, size);
     printResult(arr, size);
-    return 1;
+    return 0;
 }
 
 void mergeSort(int* arr, int l, int r) {
