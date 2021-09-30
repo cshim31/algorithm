@@ -6,7 +6,7 @@ int main() {
     
     insertionSort(arr, size);
     printResult(arr, size);
-    return 1;
+    return 0;
 }
 
 void insertionSort(int* arr, int size) {
