@@ -2,7 +2,7 @@
 
 int main() {
     int size = 10;
-    int arr[size] = {15, 2, 77, 8, 12071, 2, 1, 411412, 19292, 1151232131};
+    int arr[size] = {1, 10, 5, 8, 7, 6, 4, 3, 2, 9};
     
     bubbleSort(arr, size);
     printResult(arr, size);
@@ -15,9 +15,7 @@ void bubbleSort(int* arr, int size) {
         for(int j = 1; j < size - i; j++) { // limit j range to size - i as biggest value is pushed to end at every cycle
             // swap
             if(arr[j-1] > arr[j]) {
-                swap = arr[j-1];
-                arr[j-1] = arr[j];
-                arr[j] = swap;
+                swap(arr, j-1, j);
             }
         }
     }

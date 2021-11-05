@@ -11,4 +11,12 @@
 void printResult(int* arr, int size) {
     for(int i = 0; i < size; i++) std::cout<<arr[i]<< " ";
     std::cout<<std::endl;
-}
+};
+
+
+void swap(int* arr, int i, int j) {
+    int swap = arr[i];
+    arr[i] = arr[j];
+    arr[j] = swap;
+    return;
+};

@@ -2,7 +2,7 @@
 
 int main() {
     int size = 10;
-    int arr[size] = {15, 2, 77, 8, 12071, 2, 1, 411412, 19292, 1151232131};
+    int arr[size] = {1, 10, 5, 8, 7, 6, 4, 3, 2, 9};
     
     insertionSort(arr, size);
     printResult(arr, size);

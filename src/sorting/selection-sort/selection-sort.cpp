@@ -2,7 +2,7 @@
 
 int main() {
     int size = 10;
-    int arr[size] = {15, 2, 77, 8, 12071, 2, 1, 411412, 19292, 1151232131};
+    int arr[size] = {1, 10, 5, 8, 7, 6, 4, 3, 2, 9};
     
     selectionSort(arr, size);
     printResult(arr, size);
@@ -11,7 +11,7 @@ int main() {
 
 void selectionSort(int* arr, int size) {
     int swap; // store value for swap
-    int lowest; // store lowset value
+    int lowest; // store value for lowest 
     int position; // store index for lowest value
 
     for (int i = 0; i < size; i++) {
@@ -24,8 +24,6 @@ void selectionSort(int* arr, int size) {
         }
 
         // save lowest to left  
-        swap = arr[i];
-        arr[i] = lowest;
-        arr[position] = swap;
+        swap(arr, i, position);
     }
 }
